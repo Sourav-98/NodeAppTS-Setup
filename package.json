@@ -5,8 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "NODE_PATH=./dist/src nodemon dist/app.js",
-    "prod": "NODE_PATH=./dist/src node dist/app.js",
+    "dev": "NODE_PATH=./dist/src nodemon dist/app.js",
+    "start": "NODE_PATH=./dist/src node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
