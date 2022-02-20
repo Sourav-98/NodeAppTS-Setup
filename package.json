@@ -1,0 +1,35 @@
+{
+  "name": "nodeappts-setup",
+  "version": "1.0.0",
+  "description": "a nodejs app configured with ts",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && NODE_PATH=./dist/src nodemon dist/app.js",
+    "prod": "npm run build && NODE_PATH=./dist/src node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sourav-98/NodeAppTS-Setup.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "TS"
+  ],
+  "author": "SRC Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sourav-98/NodeAppTS-Setup/issues"
+  },
+  "homepage": "https://github.com/Sourav-98/NodeAppTS-Setup#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.5"
+  }
+}
