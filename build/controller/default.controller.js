@@ -187,11 +187,11 @@ var defaultService = __importStar(require("../service/default.service"));
 
 var defaultController = (0, express_1.Router)();
 
-var asyncDelay = function asyncDelay(time) {
+var asyncDelay = function asyncDelay(duration) {
   return new Promise(function (resolve, reject) {
     setTimeout(function () {
       resolve();
-    }, time);
+    }, duration);
   });
 };
 

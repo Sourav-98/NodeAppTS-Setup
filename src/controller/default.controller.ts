@@ -5,11 +5,11 @@ import * as defaultService from 'service/default.service';
 
 const defaultController = Router();
 
-const asyncDelay = (time : number) => {
+const asyncDelay = (duration : number) => {
     return new Promise<void>((resolve, reject) => {
         setTimeout(() => {
             resolve();
-        }, time);
+        }, duration);
     })
 }
 

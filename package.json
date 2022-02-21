@@ -7,7 +7,7 @@
     "build:tsc": "tsc",
     "build:babel" : "babel dist/src --out-dir build",
     "build:final" : "npm run build:tsc && npm run build:babel",
-    "dev": "nodemon build/app.js",
+    "dev": "npm run build:final && nodemon build/app.js",
     "start": "node build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
